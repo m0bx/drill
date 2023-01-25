@@ -1,8 +1,0 @@
-{
-  "name": "Drill",
-  "creator": "mobx",
-  "version": "0.1",
-  "description": "&3Currently only Drill fuel - Not reset block break state when mining with a Drill.",
-  "entry": "index.js",
-  "requires": ["PogData"]
-}
