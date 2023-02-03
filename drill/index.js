@@ -7,7 +7,7 @@ let drillToggled = new PogObject("Drill", {
 
 register("command", () => {
     drillToggled.toggle = !drillToggled.toggle;
-    ChatLib.chat(`&0&l[&3Drill&0] ${drillToggled.toggle ? "&r&aEnabled" : "&r&4Disabled"} module.`)
+    ChatLib.chat(`&0&l[&3&lDrill&0&l]&r ${drillToggled.toggle ? "&r&aEnabled" : "&r&4Disabled"} module.`)
     drillToggled.save();
 }).setName("drill")
 
