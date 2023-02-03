@@ -14,12 +14,12 @@ register("command", () => {
 // actual code
 const S2FPacketSetSlot = Java.type('net.minecraft.network.play.server.S2FPacketSetSlot');
 const S30PacketWindowItems = Java.type('net.minecraft.network.play.server.S30PacketWindowItems');
-var worldLoad = new Date(milliseconds)
+var worldLoad = Date.now()
 
 register("packetReceived", (packet, event) => {
     if(!drillToggled.toggle) return;
     
-    var newDate = new Date(milliseconds)
+    var newDate = Date.now()
     if (worldLoad - newDate <= 3000) return;
 
     if (Client.isInGui()) return;
@@ -39,5 +39,5 @@ register("packetReceived", (packet, event) => {
 }).setPacketClasses([S2FPacketSetSlot.class, S30PacketWindowItems.class])
 
 register("worldLoad", () => {
-    worldLoad = new Date(milliseconds)
+    worldLoad = Date.now()
 });
