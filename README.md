@@ -12,4 +12,4 @@ Download and unzip the folder, paste /drill/ with index.js and metadata file int
  - Works when holding a prismarine shard minecraft item 
 ## License
 Falls under CC BY-NC License - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes.
-![More about this license](https://en.wikipedia.org/wiki/Creative_Commons_NonCommercial_license)
+[More about this license](https://en.wikipedia.org/wiki/Creative_Commons_NonCommercial_license).
