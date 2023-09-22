@@ -20,7 +20,7 @@ register("packetReceived", (packet, event) => {
     if(!drillToggled.toggle) return;
     
     var newDate = Date.now()
-    if (worldLoad - newDate <= 3000) return;
+    if (newDate - worldLoad <= 3000) return;
 
     if (Client.isInGui()) return;
     
