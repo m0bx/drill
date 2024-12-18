@@ -26,7 +26,7 @@ register("packetReceived", (Packet, Event) => {
     if (newDate - worldLoad <= 3000) return;
     if (Packet instanceof S2FPacketSetSlot) {
         if (!Packet.func_149174_e()) { return }
-        if (!Packet.func_149174_e().toString().toLowerCase().includes("shard") && !Packet.func_149174_e().toString().toLowerCase().includes("pickaxe")) { return }
+        if (!Packet.func_149174_e().toString().toLowerCase().includes("shard") || !Packet.func_149174_e().toString().toLowerCase().includes("pickaxe") || !Packet.func_149174_e().toString().toLowerCase().includes("bow")) { return }
         cancel(Event)
     }
 
