@@ -26,7 +26,7 @@ register("packetReceived", (Packet, Event) => {
     if (newDate - worldLoad <= 3000) return;
     if (Packet instanceof S2FPacketSetSlot) {
         if (!Packet.func_149174_e()) { return }
-        if (!Packet.func_149174_e().toString().toLowerCase().includes("shard") || !Packet.func_149174_e().toString().toLowerCase().includes("pickaxe") || !Packet.func_149174_e().toString().toLowerCase().includes("bow")) { return }
+        if (!Packet.func_149174_e().toString().toLowerCase().includes("pickaxe") && !Packet.func_149174_e().toString().toLowerCase().includes("shard") && !Packet.func_149174_e().toString().toLowerCase().includes("bow")) { return } 
         cancel(Event)
     }
 
@@ -34,4 +34,4 @@ register("packetReceived", (Packet, Event) => {
         if (Packet.func_148911_c() != 0) { return }
         cancel(Event)
     }
-}).setFilteredClasses([S2FPacketSetSlot.class, S30PacketWindowItems.class])
+}).setFilteredClasses([S30PacketWindowItems.class, S2FPacketSetSlot.class])
