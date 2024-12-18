@@ -13,6 +13,6 @@ Download and unzip the folder, paste ```/drill/``` with ```index.js``` and ```me
  - Works when holding a prismarine shard minecraft item, a pickaxe or a bow
 
 ## License
-Falls under CC BY-NC License - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes. I am looking at you [@realfork](https://www.github.com/realfork)
+Falls under CC BY-NC License - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes.
 
 [More about this license](https://en.wikipedia.org/wiki/Creative_Commons_NonCommercial_license).
